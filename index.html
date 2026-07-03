@@ -121,7 +121,7 @@ img{max-width:100%;display:block}
 .tl-tag.rest{background:var(--s100);color:var(--s500)}
 
 /* ===== SCENIC CARDS ===== */
-.cards-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.cards-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
 .card{background:#fff;border:1px solid var(--s200);border-radius:var(--r-lg);padding:28px;box-shadow:var(--sh-1);transition:all .25s cubic-bezier(.16,1,.3,1)}
 .card:hover{transform:translateY(-3px);box-shadow:var(--sh-2);border-color:var(--s300)}
 .card-icon{width:46px;height:46px;border-radius:var(--r-md);background:linear-gradient(135deg,rgba(56,189,248,.12),rgba(129,140,248,.12));display:flex;align-items:center;justify-content:center;margin-bottom:16px;color:var(--sky)}
@@ -130,6 +130,18 @@ img{max-width:100%;display:block}
 .card .card-sub{font-size:13px;color:var(--s500);font-weight:500;margin-bottom:14px}
 .card .card-body{font-size:14px;color:var(--s600);line-height:1.7}
 .card .card-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}
+.card .card-deep{font-size:14px;color:var(--s600);line-height:1.75;margin-top:14px;padding-top:14px;border-top:1px solid var(--s100)}
+.card .card-deep p{margin-bottom:10px}
+.card .card-deep p:last-child{margin-bottom:0}
+.card .card-deep strong{color:var(--ink-900);font-weight:600}
+.card .card-deep em{color:var(--iris);font-style:normal;font-weight:600}
+.card-quotes{margin-top:14px;background:linear-gradient(135deg,rgba(56,189,248,.06),rgba(129,140,248,.06));border:1px solid rgba(56,189,248,.18);border-radius:var(--r-md);padding:14px 16px}
+.card-quotes .q-label{font-size:11px;font-weight:600;letter-spacing:1.5px;color:var(--iris);text-transform:uppercase;margin-bottom:8px;display:flex;align-items:center;gap:6px}
+.card-quotes .q-label::before{content:"";width:14px;height:2px;background:var(--accent-grad);border-radius:2px}
+.card-quotes p{font-size:13.5px;color:var(--ink-800);line-height:1.7;font-weight:500}
+.card-quotes p+p{margin-top:8px}
+.card-quotes p::before{content:"\201C";color:var(--sky);font-weight:700;margin-right:2px}
+.card-quotes p::after{content:"\201D";color:var(--sky);font-weight:700;margin-left:2px}
 .tag{font-size:12px;font-weight:600;padding:4px 10px;border-radius:var(--r-pill);background:var(--s100);color:var(--s600)}
 .tag.grad{background:linear-gradient(135deg,rgba(56,189,248,.12),rgba(129,140,248,.12));color:var(--iris)}
 .tag.success{background:rgba(34,197,94,.1);color:var(--success)}
@@ -181,7 +193,7 @@ img{max-width:100%;display:block}
 /* ===== RESPONSIVE ===== */
 @media (max-width:1024px){
   .timeline{grid-template-columns:1fr}
-  .cards-grid{grid-template-columns:repeat(2,1fr)}
+  .cards-grid{grid-template-columns:1fr}
   .hero h1{font-size:40px}
   .hero-meta{grid-template-columns:repeat(2,1fr)}
   .tips-grid{grid-template-columns:1fr}
@@ -404,51 +416,113 @@ img{max-width:100%;display:block}
   <div class="container">
     <div class="section-head">
       <div class="section-eyebrow">SCENIC SPOTS · 人文景点</div>
-      <h2>五处文化地标</h2>
-      <p class="section-desc">每一处都配有地陪级人文讲解要点——给航天家庭讲兰亭讲沈园，多讲工艺、年代、数据，少煽情。</p>
+      <h2>六处文化地标</h2>
+      <p class="section-desc">每一处配深度人文背景 + 地陪话术——给航天家庭讲兰亭讲沈园，多讲工艺、年代、数据，少煽情。话术框里的文字可直接在现场念。</p>
     </div>
     <div class="cards-grid">
       <div class="card">
         <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l3-3 3 3 3-3 3 3 3-3 3 3"/><path d="M3 15l3-3 3 3 3-3 3 3 3-3 3 3"/><path d="M5 12V5l7-3 7 3v7"/></svg></div>
         <h3>兰亭</h3>
         <div class="card-sub">中国书法的耶路撒冷</div>
-        <div class="card-body">东晋永和九年（公元 353 年）三月初三，王羲之与谢安等 41 位名士在此修禊，曲水流觞得诗 37 首，王羲之乘醉写下《兰亭集序》28 行 324 字，被尊为"天下第一行书"。</div>
-        <div class="card-tags"><span class="tag grad">鹅池</span><span class="tag grad">曲水流觞</span><span class="tag">御碑亭</span></div>
+        <div class="card-body">东晋永和九年（公元 353 年）三月初三，王羲之与谢安、孙绰等 41 位名士在此修禊，曲水流觞得诗 37 首，王羲之乘醉写下《兰亭集序》28 行 324 字，被尊为"天下第一行书"。</div>
+        <div class="card-deep">
+          <p><strong>鹅池</strong>：王羲之爱鹅成痴，相传在此观鹅悟出运腕之法。池边碑亭刻"鹅池"二字，传为父子合书——父写"鹅"，子王献之写"池"，是兰亭第一打卡点。</p>
+          <p><strong>曲水流觞</strong>：名士列坐曲水两岸，酒杯（羽觞）顺水漂流，停在谁前谁就赋诗，不成则罚酒三觞。那日王羲之微醉，蚕茧纸、鼠须笔，一气呵成《兰亭序》。事后他多次重写都不如原稿，自己也叹"此神助耳"。</p>
+          <p><strong>御碑亭</strong>：碑阳为康熙临《兰亭序》全文，碑阴为乾隆《兰亭即事》诗，祖孙两帝同碑，全国罕见。这块碑本身就是"康乾盛世"对魏晋风度的致敬。</p>
+          <p><strong>王右军祠</strong>：王羲之官至右军将军，祠内有墨华池、墨华亭，是后世纪念所在。</p>
+        </div>
+        <div class="card-quotes">
+          <div class="q-label">地陪话术</div>
+          <p>1600 多年前的一个春天，中国最会写字的一群人在这里喝了顿酒，留下 324 字的短文，从此定义了什么叫"魏晋风度"。</p>
+          <p>永和九年是公元 353 年，比王羲之去世还早 5 年——他写完这篇之后，自己再写多少遍都写不出那个味道。</p>
+        </div>
+        <div class="card-tags"><span class="tag grad">鹅池</span><span class="tag grad">曲水流觞</span><span class="tag">御碑亭</span><span class="tag">王右军祠</span></div>
       </div>
       <div class="card">
         <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
         <h3>鲁迅故里</h3>
         <div class="card-sub">从课本走进现场</div>
-        <div class="card-body">一条街串起：鲁迅祖居（周家新台门）→ 鲁迅故居（含百草园）→ 三味书屋（鲁迅 12–17 岁读书处，书桌刻"早"字）→ 鲁迅纪念馆。免费但需分时预约。</div>
-        <div class="card-tags"><span class="tag grad">百草园</span><span class="tag grad">三味书屋</span><span class="tag">台门</span></div>
+        <div class="card-body">一条街串起：鲁迅祖居（周家新台门）→ 鲁迅故居（含百草园）→ 三味书屋（鲁迅 12–17 岁读书处，书桌刻"早"字）。免费但需分时预约。</div>
+        <div class="card-deep">
+          <p><strong>台门</strong>：绍兴方言，指家族聚居的院落。周家是绍兴望族，"新台门"是周氏分支所居，鲁迅在这里出生、长到 18 岁。看仪门、厅堂、书房，体会江南士绅家庭的格局。</p>
+          <p><strong>百草园</strong>：鲁迅童年玩耍的后园。"不必说碧绿的菜畦，光滑的石井栏，高大的皂荚树，紫红的桑葚……"——《从百草园到三味书屋》是几代中国人共同的课文。现在还保留着菜畦和矮墙，站在这里念一段，父母会动容。</p>
+          <p><strong>三味书屋</strong>：寿镜吾老先生的私塾。"三味"取"读经味如稻粱、读史味如肴馔、读诸子百家味如醯醢"。书桌右下角那个"早"字是鲁迅刻的——因迟到被戒尺责罚后自警。这个细节一定要指给父母看。</p>
+          <p><strong>鲁迅纪念馆</strong>：室内有空调，适合避暑细看，讲鲁迅从绍兴→南京→日本→北京→上海的一生，有大量手稿、书信。时间紧可略过。</p>
+        </div>
+        <div class="card-quotes">
+          <div class="q-label">地陪话术</div>
+          <p>鲁迅不姓鲁，姓周，叫周树人。"鲁迅"是 1918 年发《狂人日记》时用的笔名，那年他 37 岁。</p>
+          <p>三味书屋的"早"字，是他 12 岁时父亲病重、每天奔走药铺迟到后刻下的自警。一个孩子的自律，后来成了几代课本里的课文。</p>
+        </div>
+        <div class="card-tags"><span class="tag grad">百草园</span><span class="tag grad">三味书屋</span><span class="tag">台门</span><span class="tag">早字</span></div>
       </div>
       <div class="card">
         <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2 7h7l-5.5 4 2 7L12 16l-5.5 4 2-7L3 9h7z"/></svg></div>
         <h3>沈园</h3>
         <div class="card-sub">中国文学最痛的重逢</div>
         <div class="card-body">南宋爱国诗人陆游与原配唐琬被迫休妻，十余年后沈园重逢，陆游题壁《钗头凤·红酥手》，唐琬和词《世情薄》不久病逝。陆游 75 岁重游再写"伤心桥下春波绿，曾是惊鸿照影来"。</div>
-        <div class="card-tags"><span class="tag grad">钗头凤碑</span><span class="tag">孤鹤轩</span><span class="tag">宋井亭</span></div>
+        <div class="card-deep">
+          <p><strong>钗头凤碑</strong>：园内题词壁，陆游词与唐琬和词并列。陆游原词："红酥手，黄縢酒，满城春色宫墙柳。东风恶，欢情薄……错、错、错！"唐琬和："世情薄，人情恶，雨送黄昏花易落……"两词合刻一壁，是中国文学史最沉重的对话。</p>
+          <p><strong>孤鹤轩、半壁亭、宋井亭、双桂堂</strong>：江南园林小品，夏日荷花池正是好时候。断云石从中间断开，隐喻陆游唐琬的姻缘。</p>
+          <p><strong>陆游的一生</strong>：他活了 85 岁，一生写沈园。31 岁题《钗头凤》，75 岁重游写《沈园二首》，84 岁临终前一年还写"沈家园里花如锦，半是当年识放翁"。一个人为一座园记了一辈子。</p>
+        </div>
+        <div class="card-quotes">
+          <div class="q-label">地陪话术</div>
+          <p>陆休唐琬不是因为不爱，是母亲不喜。他后来娶了王氏，唐琬改嫁赵士程——两个人都没错，错的是那个时代。</p>
+          <p>陆游 85 岁去世前一年还在写沈园。一个人为一座园记了一辈子，这比任何爱情小说都克制都痛。</p>
+        </div>
+        <div class="card-tags"><span class="tag grad">钗头凤碑</span><span class="tag">孤鹤轩</span><span class="tag">宋井亭</span><span class="tag">断云石</span></div>
       </div>
       <div class="card">
         <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><path d="M12 5v14"/><path d="M5 12h14"/></svg></div>
         <h3>东湖</h3>
         <div class="card-sub">水上的立体山水画</div>
-        <div class="card-body">古代采石场留下的深潭，崖壁陡立如劈。核心体验是坐乌篷船进崖壁水洞——绍兴乌篷船是国家级非遗，船老大手脚并用划桨，船篷用黑漆竹编，就是鲁迅小说里的"乌篷船"。夏令 08:00–17:00 开放，16:50 停售票，乌篷船末班约 16:30，需踩准时间。</div>
-        <div class="card-tags"><span class="tag grad">乌篷船</span><span class="tag">崖壁</span><span class="tag warning">视体力</span></div>
+        <div class="card-body">古代采石场留下的深潭，崖壁陡立如劈。核心体验是坐乌篷船进崖壁水洞。夏令 08:00–17:00 开放，16:50 停售票，乌篷船末班约 16:30，需踩准时间。</div>
+        <div class="card-deep">
+          <p><strong>崖壁</strong>：从汉代起这里就是石料场，历经千年开凿，留下深潭与陡壁。崖壁上有"陶公洞""仙桃洞"等水洞，乌篷船可穿行其中，仰头只见一线天光。</p>
+          <p><strong>乌篷船</strong>：绍兴独有的船种，国家级非遗。船篷用竹编、涂黑漆（故称"乌篷"），船老大<em>手脚并用</em>——双手划大桨、双脚蹬小桨，一人一船，这就是鲁迅小说《社戏》里孩子们划去看戏的那种船。</p>
+          <p><strong>听桨声</strong>：船进水洞时桨声回荡，是绍兴最古老的声音。船舱低矮，需低头而坐，下船时船会晃，老人要穿防滑鞋。</p>
+        </div>
+        <div class="card-quotes">
+          <div class="q-label">地陪话术</div>
+          <p>这崖壁是两千多年一斧一斧凿出来的，采石采成了一座山水画。中国人改造自然的能力，从汉代就开始了。</p>
+          <p>船老大的脚在蹬桨、手在划桨，一个人开一条船。这就是鲁迅写《社戏》时孩子们坐的那种乌篷船。</p>
+        </div>
+        <div class="card-tags"><span class="tag grad">乌篷船</span><span class="tag">崖壁</span><span class="tag">陶公洞</span><span class="tag warning">视体力</span></div>
       </div>
       <div class="card">
         <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg></div>
         <h3>绍兴饭店</h3>
         <div class="card-sub">江南士绅的"家"</div>
-        <div class="card-body">始建于 1958 年，前身为"绍兴地区交际处"，背靠卧龙山，毗邻城市广场，江南民居庭院式布局。本身就像一座园林，庭院里有古树、亭台、水池，比外面凉快。</div>
-        <div class="card-tags"><span class="tag">国宾馆</span><span class="tag">卧龙山</span><span class="tag">庭院</span></div>
+        <div class="card-body">始建于 1958 年，前身为"绍兴地区交际处"，背靠卧龙山（府山），毗邻城市广场，江南民居庭院式布局。本身就像一座园林。</div>
+        <div class="card-deep">
+          <p><strong>历史</strong>：1958 年建为"绍兴地区交际处"，专门接待上级和外宾；1967 年改为地区招待所，80 年代初更名绍兴饭店。是绍兴最早的国宾馆性质接待场所。</p>
+          <p><strong>卧龙山</strong>：又叫府山，春秋时越王勾践在此建都，山上有越王台、飞翼楼。饭店背山而建，庭院里有古树、亭台、水池，比外面凉快 3–5 度，正午最适合让父母在院里转。</p>
+          <p><strong>庭院</strong>：江南民居庭院式布局，白墙黛瓦、回廊曲径。从大堂到客房要穿过几进院子，本身就是一次"江南园林体验"，不用专门买票去别处。</p>
+        </div>
+        <div class="card-quotes">
+          <div class="q-label">地陪话术</div>
+          <p>这家饭店 1958 年就有了，原来叫"交际处"——那个年代专门接待上级领导的地方。住在这里，等于住在绍兴的"客厅"里。</p>
+          <p>后面那座山叫卧龙山，2500 年前越王勾践就在这里建都。我们住的这片地方，是绍兴最老的核心。</p>
+        </div>
+        <div class="card-tags"><span class="tag">国宾馆</span><span class="tag">卧龙山</span><span class="tag">越王台</span><span class="tag">庭院</span></div>
       </div>
       <div class="card">
         <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3v18l3-2 3 2 3-2 3 2 3-2V3z"/><path d="M9 7h6"/><path d="M9 11h6"/></svg></div>
         <h3>仓桥直街</h3>
         <div class="card-sub">古河道石板路台门</div>
-        <div class="card-body">绍兴保存最完整的古河道+石板路+台门老街，夜里灯笼亮起、河边有人乘凉，比白天更有味道。黄酒奶茶、黄酒棒冰、臭豆腐都能在这里找到。</div>
-        <div class="card-tags"><span class="tag grad">夜步</span><span class="tag">黄酒奶茶</span><span class="tag">老街</span></div>
+        <div class="card-body">绍兴保存最完整的古河道+石板路+台门老街，全长 1.5 公里，夜里灯笼亮起、河边有人乘凉，比白天更有味道。黄酒奶茶、黄酒棒冰、臭豆腐都能在这里找到。</div>
+        <div class="card-deep">
+          <p><strong>台门人家</strong>：街两侧是原住民仍住着的台门院落，不是仿古街。推开木门就是天井、厢房、水井，能看见居民在河边洗菜、乘凉。这是"活着的绍兴"，不是景区摆设。</p>
+          <p><strong>河道</strong>：绍兴古城"三山万户巷盘曲，百桥千街水纵横"，仓桥直街沿一条小河延伸，河上还有几座古石桥。夜里灯笼映在水里，是江南水乡的标准画面。</p>
+          <p><strong>黄酒奶茶/棒冰</strong>：年轻人会喜欢的"轻量入口"。黄酒奶茶用绍兴加饭酒调奶茶，酒味淡、奶香重；黄酒棒冰是绍兴人自己的消暑物，便宜好吃。</p>
+        </div>
+        <div class="card-quotes">
+          <div class="q-label">地陪话术</div>
+          <p>这条街不是仿古，是绍兴人现在还住着的家。推开那扇木门，里面是天井、水井、几户人家——这就是鲁迅小时候看到的绍兴。</p>
+          <p>来一杯黄酒奶茶——绍兴的年轻人都这么喝，把老酒变成了新潮饮。</p>
+        </div>
+        <div class="card-tags"><span class="tag grad">夜步</span><span class="tag grad">黄酒奶茶</span><span class="tag">台门</span><span class="tag">古石桥</span></div>
       </div>
     </div>
   </div>
