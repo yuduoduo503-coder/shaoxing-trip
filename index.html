@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>绍兴两日深度地陪方案 · 7月4–5日 | MetaTask</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink-900:#0F172A; --ink-800:#1E293B; --ink-700:#334155;
+  --sky:#38BDF8; --iris:#818CF8;
+  --accent-grad:linear-gradient(135deg,#38BDF8,#818CF8);
+  --s50:#F8FAFC; --s100:#F1F5F9; --s200:#E2E8F0; --s300:#CBD5E1;
+  --s400:#94A3B8; --s500:#64748B; --s600:#475569; --s700:#334155; --s800:#1E293B; --s900:#0F172A;
+  --success:#22C55E; --warning:#F59E0B; --error:#EF4444; --info:#38BDF8;
+  --r-sm:8px; --r-md:12px; --r-lg:16px; --r-xl:24px; --r-pill:999px;
+  --sp-1:4px; --sp-2:8px; --sp-3:12px; --sp-4:16px; --sp-6:24px; --sp-8:32px; --sp-10:40px; --sp-12:48px; --sp-16:64px;
+  --sh-1:0 1px 2px rgba(15,23,42,.06);
+  --sh-2:0 4px 12px rgba(15,23,42,.08);
+  --sh-3:0 12px 32px rgba(15,23,42,.12);
+  --sh-glow:0 8px 30px rgba(56,189,248,.25);
+  --font-sans:"Inter","Noto Sans SC",-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;
+  --w-prose:720px; --w-content:1080px; --w-wide:1280px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-sans);background:var(--s50);color:var(--s800);font-size:16px;line-height:1.7;font-weight:400;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.container{max-width:var(--w-content);margin:0 auto;padding:0 24px}
+.container-wide{max-width:var(--w-wide);margin:0 auto;padding:0 24px}
+
+/* ===== NAV ===== */
+.nav{position:sticky;top:0;z-index:50;height:64px;background:rgba(255,255,255,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--s200)}
+.nav-inner{max-width:var(--w-wide);margin:0 auto;padding:0 24px;height:100%;display:flex;align-items:center;justify-content:space-between}
+.nav-brand{display:flex;align-items:center;gap:12px}
+.nav-brand .logo-icon{width:32px;height:32px}
+.nav-brand .brand-text{font-weight:700;font-size:15px;color:var(--ink-900);letter-spacing:-.3px}
+.nav-brand .brand-sub{font-size:12px;color:var(--s500);font-weight:500}
+.nav-menu{display:flex;align-items:center;gap:32px}
+.nav-menu a{font-size:14px;font-weight:500;color:var(--s600);transition:color .18s ease-out;position:relative}
+.nav-menu a:hover{color:var(--ink-900)}
+.nav-menu a.active{color:var(--ink-900)}
+.nav-menu a.active::after{content:"";position:absolute;left:0;right:0;bottom:-22px;height:2px;background:var(--accent-grad);border-radius:2px}
+.nav-cta{display:flex;align-items:center;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:inherit;font-weight:600;cursor:pointer;border:none;transition:all .18s ease-out;white-space:nowrap}
+.btn-primary{background:var(--accent-grad);color:#fff;box-shadow:var(--sh-glow);padding:11px 22px;border-radius:var(--r-md);font-size:14px}
+.btn-primary:hover{transform:translateY(-1px);box-shadow:0 12px 36px rgba(56,189,248,.35)}
+.btn-solid{background:var(--ink-900);color:#fff;padding:11px 22px;border-radius:var(--r-md);font-size:14px}
+.btn-solid:hover{background:var(--ink-800)}
+.btn-outline{background:#fff;color:var(--ink-900);border:1px solid var(--s300);padding:10px 20px;border-radius:var(--r-md);font-size:14px}
+.btn-outline:hover{border-color:var(--s500);background:var(--s50)}
+.btn-ghost{background:transparent;color:var(--s600);padding:10px 16px;border-radius:var(--r-md);font-size:14px}
+.btn-ghost:hover{background:var(--s100);color:var(--ink-900)}
+
+/* ===== HERO / KV ===== */
+.hero{background:radial-gradient(120% 120% at 85% 0%, #1E293B 0%, #0F172A 60%);color:#fff;position:relative;overflow:hidden;padding:96px 0 88px}
+.hero::before{content:"";position:absolute;top:-120px;right:-80px;width:560px;height:560px;background:radial-gradient(circle,rgba(56,189,248,.22) 0%,transparent 60%);pointer-events:none}
+.hero::after{content:"";position:absolute;bottom:-200px;left:-100px;width:480px;height:480px;background:radial-gradient(circle,rgba(129,140,248,.15) 0%,transparent 60%);pointer-events:none}
+.hero-inner{position:relative;z-index:2;max-width:var(--w-content);margin:0 auto;padding:0 24px}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--sky);background:rgba(56,189,248,.1);border:1px solid rgba(56,189,248,.25);padding:6px 14px;border-radius:var(--r-pill);margin-bottom:24px}
+.hero-eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--sky);box-shadow:0 0 8px var(--sky)}
+.hero h1{font-size:56px;line-height:1.1;font-weight:800;letter-spacing:-1.5px;margin-bottom:20px}
+.hero h1 .grad{background:var(--accent-grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
+.hero-sub{font-size:18px;line-height:1.7;color:var(--s400);max-width:680px;margin-bottom:36px;font-weight:400}
+.hero-cta{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.hero-meta{margin-top:48px;display:grid;grid-template-columns:repeat(4,1fr);gap:16px;max-width:760px}
+.hero-meta-item{background:rgba(255,255,255,.04);border:1px solid rgba(148,163,184,.16);border-radius:var(--r-lg);padding:18px 20px}
+.hero-meta-item .label{font-size:12px;color:var(--s400);font-weight:500;letter-spacing:.5px;margin-bottom:6px}
+.hero-meta-item .value{font-size:22px;font-weight:700;color:#fff}
+.hero-meta-item .value .grad{background:var(--accent-grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+
+/* ===== SECTION ===== */
+.section{padding:88px 0}
+.section-alt{background:var(--s100)}
+.section-dark{background:var(--ink-900);color:#fff}
+.section-head{margin-bottom:48px}
+.section-eyebrow{font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--sky);margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.section-eyebrow::before{content:"";width:24px;height:2px;background:var(--accent-grad);border-radius:2px}
+.section-dark .section-eyebrow{color:var(--sky)}
+.section h2{font-size:32px;line-height:1.2;font-weight:700;letter-spacing:-1px;color:var(--ink-900);margin-bottom:12px}
+.section-dark h2{color:#fff}
+.section-desc{font-size:16px;color:var(--s500);max-width:680px}
+.section-dark .section-desc{color:var(--s400)}
+
+/* ===== WEATHER STRIP ===== */
+.weather{background:var(--ink-900);color:#fff;padding:20px 0}
+.weather-inner{max-width:var(--w-content);margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:32px;flex-wrap:wrap}
+.weather-label{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--s400);font-weight:500}
+.weather-label .icon{width:18px;height:18px;color:var(--warning)}
+.weather-days{display:flex;gap:16px;flex:1;min-width:280px}
+.weather-day{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.04);border:1px solid rgba(148,163,184,.16);border-radius:var(--r-md);padding:8px 14px}
+.weather-day .d{font-size:13px;color:var(--s400);font-weight:500}
+.weather-day .t{font-size:15px;font-weight:700;color:#fff}
+.weather-day .t .grad{background:var(--accent-grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.weather-tip{font-size:13px;color:var(--s400);display:flex;align-items:center;gap:8px}
+.weather-tip .warn{color:var(--warning);font-weight:600}
+
+/* ===== TIMELINE ===== */
+.timeline{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.day-col{background:#fff;border:1px solid var(--s200);border-radius:var(--r-xl);overflow:hidden;box-shadow:var(--sh-1)}
+.day-head{padding:24px 28px;background:linear-gradient(135deg,#0F172A 0%,#1E293B 100%);color:#fff;display:flex;align-items:center;justify-content:space-between}
+.day-head .day-title{font-size:20px;font-weight:700}
+.day-head .day-date{font-size:13px;color:var(--s400);font-weight:500}
+.day-head .day-badge{background:rgba(56,189,248,.15);border:1px solid rgba(56,189,248,.3);color:var(--sky);font-size:12px;font-weight:600;padding:4px 12px;border-radius:var(--r-pill);letter-spacing:.5px}
+.day-body{padding:24px 28px;position:relative}
+.day-body::before{content:"";position:absolute;left:42px;top:32px;bottom:32px;width:2px;background:var(--s200)}
+.tl-item{display:flex;gap:20px;padding:14px 0;position:relative}
+.tl-time{flex-shrink:0;width:64px;text-align:right;font-size:13px;font-weight:600;color:var(--ink-900);padding-top:2px;font-variant-numeric:tabular-nums}
+.tl-dot{flex-shrink:0;width:12px;height:12px;border-radius:50%;background:#fff;border:2px solid var(--s300);margin-top:6px;position:relative;z-index:2}
+.tl-item.highlight .tl-dot{background:var(--accent-grad);border-color:transparent;box-shadow:0 0 0 4px rgba(56,189,248,.15)}
+.tl-item.meal .tl-dot{background:var(--warning);border-color:transparent}
+.tl-item.scenic .tl-dot{background:var(--success);border-color:transparent}
+.tl-content{flex:1;padding-bottom:4px}
+.tl-content .tl-title{font-size:15px;font-weight:600;color:var(--ink-900);margin-bottom:2px}
+.tl-content .tl-desc{font-size:13px;color:var(--s500);line-height:1.6}
+.tl-tag{display:inline-block;font-size:11px;font-weight:600;padding:2px 8px;border-radius:var(--r-pill);margin-left:6px;vertical-align:1px}
+.tl-tag.scenic{background:rgba(34,197,94,.1);color:var(--success)}
+.tl-tag.meal{background:rgba(245,158,11,.1);color:var(--warning)}
+.tl-tag.rest{background:var(--s100);color:var(--s500)}
+
+/* ===== SCENIC CARDS ===== */
+.cards-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{background:#fff;border:1px solid var(--s200);border-radius:var(--r-lg);padding:28px;box-shadow:var(--sh-1);transition:all .25s cubic-bezier(.16,1,.3,1)}
+.card:hover{transform:translateY(-3px);box-shadow:var(--sh-2);border-color:var(--s300)}
+.card-icon{width:46px;height:46px;border-radius:var(--r-md);background:linear-gradient(135deg,rgba(56,189,248,.12),rgba(129,140,248,.12));display:flex;align-items:center;justify-content:center;margin-bottom:16px;color:var(--sky)}
+.card-icon svg{width:24px;height:24px}
+.card h3{font-size:20px;font-weight:600;color:var(--ink-900);margin-bottom:6px;letter-spacing:-.3px}
+.card .card-sub{font-size:13px;color:var(--s500);font-weight:500;margin-bottom:14px}
+.card .card-body{font-size:14px;color:var(--s600);line-height:1.7}
+.card .card-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}
+.tag{font-size:12px;font-weight:600;padding:4px 10px;border-radius:var(--r-pill);background:var(--s100);color:var(--s600)}
+.tag.grad{background:linear-gradient(135deg,rgba(56,189,248,.12),rgba(129,140,248,.12));color:var(--iris)}
+.tag.success{background:rgba(34,197,94,.1);color:var(--success)}
+.tag.warning{background:rgba(245,158,11,.1);color:var(--warning)}
+
+/* ===== RESTAURANT TABLE ===== */
+.rtable-wrap{background:#fff;border:1px solid var(--s200);border-radius:var(--r-xl);overflow:hidden;box-shadow:var(--sh-1)}
+.rtable{width:100%;border-collapse:collapse}
+.rtable th{background:var(--s50);text-align:left;padding:16px 24px;font-size:12px;font-weight:600;letter-spacing:.5px;color:var(--s500);text-transform:uppercase;border-bottom:1px solid var(--s200)}
+.rtable td{padding:20px 24px;border-bottom:1px solid var(--s100);font-size:14px;color:var(--s600);vertical-align:top}
+.rtable tr:last-child td{border-bottom:none}
+.rtable tr:hover td{background:var(--s50)}
+.rtable .r-name{font-weight:600;color:var(--ink-900);font-size:15px}
+.rtable .r-dishes{color:var(--s600)}
+.rtable .r-dishes strong{color:var(--ink-900);font-weight:600}
+.rtable .r-price{font-weight:700;color:var(--iris);font-variant-numeric:tabular-nums}
+
+/* ===== TIPS (dark section) ===== */
+.tips-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.tip{background:rgba(255,255,255,.04);border:1px solid rgba(148,163,184,.16);border-radius:var(--r-lg);padding:24px;transition:all .25s ease-out}
+.tip:hover{background:rgba(255,255,255,.06);border-color:rgba(148,163,184,.28);transform:translateY(-2px)}
+.tip-head{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+.tip-icon{width:36px;height:36px;border-radius:var(--r-sm);background:linear-gradient(135deg,rgba(56,189,248,.15),rgba(129,140,248,.15));display:flex;align-items:center;justify-content:center;color:var(--sky);flex-shrink:0}
+.tip-icon svg{width:20px;height:20px}
+.tip h4{font-size:15px;font-weight:600;color:#fff}
+.tip p{font-size:14px;color:var(--s400);line-height:1.7}
+.tip p strong{color:var(--sky);font-weight:600}
+
+/* ===== DATA / HIGHLIGHT ===== */
+.data-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:0;background:rgba(255,255,255,.04);border:1px solid rgba(148,163,184,.16);border-radius:var(--r-xl);overflow:hidden}
+.data-cell{padding:32px 28px;border-right:1px solid rgba(148,163,184,.16)}
+.data-cell:last-child{border-right:none}
+.data-cell .num{font-size:40px;font-weight:800;line-height:1.1;margin-bottom:6px;letter-spacing:-1px}
+.data-cell .num.grad{background:var(--accent-grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.data-cell .lbl{font-size:13px;color:var(--s400);font-weight:500}
+
+/* ===== FOOTER ===== */
+.footer{background:var(--ink-900);color:#fff;padding:64px 0 32px;border-top:1px solid rgba(148,163,184,.16)}
+.footer-inner{max-width:var(--w-wide);margin:0 auto;padding:0 24px}
+.footer-top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:48px;padding-bottom:40px;border-bottom:1px solid rgba(148,163,184,.16)}
+.footer-brand{display:flex;flex-direction:column;gap:16px}
+.footer-brand .logo-line{display:flex;align-items:center;gap:12px}
+.footer-brand .logo-line img{width:36px;height:36px}
+.footer-brand .logo-line .name{font-size:16px;font-weight:700;color:#fff}
+.footer-brand p{font-size:13px;color:var(--s400);line-height:1.7;max-width:320px}
+.footer-col h5{font-size:13px;font-weight:600;color:#fff;margin-bottom:16px;letter-spacing:.3px}
+.footer-col a{display:block;font-size:13px;color:var(--s400);padding:5px 0;transition:color .18s}
+.footer-col a:hover{color:var(--sky)}
+.footer-bottom{padding-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.footer-bottom p{font-size:12px;color:var(--s500)}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width:1024px){
+  .timeline{grid-template-columns:1fr}
+  .cards-grid{grid-template-columns:repeat(2,1fr)}
+  .hero h1{font-size:40px}
+  .hero-meta{grid-template-columns:repeat(2,1fr)}
+  .tips-grid{grid-template-columns:1fr}
+  .data-strip{grid-template-columns:repeat(2,1fr)}
+  .data-cell:nth-child(2){border-right:none}
+  .data-cell:nth-child(1),.data-cell:nth-child(2){border-bottom:1px solid rgba(148,163,184,.16)}
+  .footer-top{grid-template-columns:1fr 1fr;gap:32px}
+}
+@media (max-width:640px){
+  .nav-menu{display:none}
+  .section{padding:56px 0}
+  .hero{padding:64px 0 56px}
+  .hero h1{font-size:32px;letter-spacing:-.5px}
+  .hero-sub{font-size:16px}
+  .hero-meta{grid-template-columns:1fr 1fr;gap:12px;margin-top:32px}
+  .hero-meta-item{padding:14px}
+  .hero-meta-item .value{font-size:18px}
+  .cards-grid{grid-template-columns:1fr}
+  .data-strip{grid-template-columns:1fr}
+  .data-cell{border-right:none!important;border-bottom:1px solid rgba(148,163,184,.16)}
+  .data-cell:last-child{border-bottom:none}
+  .day-body{padding:20px}
+  .day-body::before{left:32px}
+  .tl-time{width:54px;font-size:12px}
+  .rtable-wrap{overflow-x:auto}
+  .rtable{min-width:640px}
+  .footer-top{grid-template-columns:1fr;gap:24px}
+  .weather-days{flex-direction:column}
+}
+
+/* fade-in animation */
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.fade{opacity:0;animation:fadeUp .6s cubic-bezier(.16,1,.3,1) forwards}
+.fade.d1{animation-delay:.1s}.fade.d2{animation-delay:.2s}.fade.d3{animation-delay:.3s}
+
+/* logo spin decoration */
+.spin-slow{animation:spin 18s linear infinite}
+@keyframes spin{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+</style>
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-brand">
+      <img src="logo-light.svg" alt="MetaTask" class="logo-icon">
+      <div>
+        <div class="brand-text">元任务 MetaTask</div>
+        <div class="brand-sub">绍兴两日地陪方案</div>
+      </div>
+    </div>
+    <div class="nav-menu">
+      <a href="#weather" class="active">天气</a>
+      <a href="#timeline">行程</a>
+      <a href="#scenic">景点</a>
+      <a href="#dining">餐饮</a>
+      <a href="#tips">地陪贴士</a>
+    </div>
+    <div class="nav-cta">
+      <a href="#timeline" class="btn btn-primary">查看完整行程 →</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-eyebrow fade"><span class="dot"></span>SHAOXING · 绍兴 · 2026.07.04–05</div>
+    <h1 class="fade d1">江南伏天<br>带父母赴一场<span class="grad">魏晋宋韵</span></h1>
+    <p class="hero-sub fade d2">从王羲之的曲水流觞，到陆游唐琬的钗头凤；从鲁迅的百草园，到咸亨酒店的一壶温黄酒。一份按元任务视觉规范设计的、给航天家庭的深度文化地陪方案。</p>
+    <div class="hero-cta fade d3">
+      <a href="#timeline" class="btn btn-primary">立即查看行程表 →</a>
+      <a href="#tips" class="btn btn-outline" style="background:rgba(255,255,255,.06);color:#fff;border-color:rgba(148,163,184,.3)">地陪实操贴士</a>
+    </div>
+    <div class="hero-meta fade d3">
+      <div class="hero-meta-item">
+        <div class="label">行程天数</div>
+        <div class="value"><span class="grad">2</span> 天 1 晚</div>
+      </div>
+      <div class="hero-meta-item">
+        <div class="label">文化景点</div>
+        <div class="value"><span class="grad">5</span> 处</div>
+      </div>
+      <div class="hero-meta-item">
+        <div class="label">特色餐饮</div>
+        <div class="value"><span class="grad">4</span> 餐</div>
+      </div>
+      <div class="hero-meta-item">
+        <div class="label">最高气温</div>
+        <div class="value"><span class="grad">35</span>°C</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ===== WEATHER ===== -->
+<section class="weather" id="weather">
+  <div class="weather-inner">
+    <div class="weather-label">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/></svg>
+      周末天气
+    </div>
+    <div class="weather-days">
+      <div class="weather-day"><span class="d">7月4日 周六</span><span class="t"><span class="grad">35</span>° / 26°</span></div>
+      <div class="weather-day"><span class="d">7月5日 周日</span><span class="t"><span class="grad">35</span>° / 27°</span></div>
+    </div>
+    <div class="weather-tip"><span class="warn">⚠</span> 高温闷热，午后易触发短时雷阵雨 · 采用"早出门·午避暑·晚赏景"节奏</div>
+  </div>
+</section>
+
+<!-- ===== TIMELINE ===== -->
+<section class="section" id="timeline">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow">ITINERARY · 行程表</div>
+      <h2>两日深度行程</h2>
+      <p class="section-desc">按"早出门、午避暑、晚赏景"原则排程，户外重点放在 10:00 前和 16:00 后，正午安排室内/用餐/午休。</p>
+    </div>
+    <div class="timeline">
+      <!-- DAY 1 -->
+      <div class="day-col">
+        <div class="day-head">
+          <div>
+            <div class="day-title">Day 1 · 周六</div>
+            <div class="day-date">7月4日 · 入住 + 兰亭</div>
+          </div>
+          <div class="day-badge">DAY 01</div>
+        </div>
+        <div class="day-body">
+          <div class="tl-item">
+            <div class="tl-time">09:30</div>
+            <div class="tl-dot"></div>
+            <div class="tl-content"><div class="tl-title">自驾 杭州→绍兴</div><div class="tl-desc">一家三口杭甬高速，约 1.5–2 小时</div></div>
+          </div>
+          <div class="tl-item meal">
+            <div class="tl-time">11:30</div>
+            <div class="tl-dot"></div>
+            <div class="tl-content"><div class="tl-title">绍兴饭店入住<span class="tl-tag meal">午餐</span></div><div class="tl-desc">庭院小转，中餐厅吃绍帮菜开门餐</div></div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-time">14:00</div>
+            <div class="tl-dot"></div>
+            <div class="tl-content"><div class="tl-title">回房午休<span class="tl-tag rest">避暑</span></div><div class="tl-desc">35°C 正午绝不让老人在户外</div></div>
+          </div>
+          <div class="tl-item scenic">
+            <div class="tl-time">16:00</div>
+            <div class="tl-dot"></div>
+            <div class="tl-content"><div class="tl-title">兰亭景区<span class="tl-tag scenic">景点</span></div><div class="tl-desc">鹅池 → 曲水流觞 → 御碑亭 → 王右军祠</div></div>
+          </div>
+          <div class="tl-item meal">
+            <div class="tl-time">19:00</div>
+            <div class="tl-dot"></div>
+            <div class="tl-content"><div class="tl-title">寻宝记绍兴菜<span class="tl-tag meal">晚餐</span></div><div class="tl-desc">老字号绍帮菜，越剧伴餐</div></div>
+          </div>
+          <div class="tl-item highlight">
+            <div class="tl-time">20:30</div>
+            <div class="tl-dot"></div>
+            <div class="tl-content"><div class="tl-title">仓桥直街夜步</div><div class="tl-desc">古河道+石板路+台门，黄酒奶茶/黄酒棒冰</div></div>
+          </div>
+        </div>
+      </div>
+      <!-- DAY 2 -->
+      <div class="day-col">
+        <div class="day-head">
+          <div>
+            <div class="day-title">Day 2 · 周日</div>
+            <div class="day-date">7月5日 · 老城文化日</div>
+          </div>
+          <div class="day-badge">DAY 02</div>
+        </div>
+        <div class="day-body">
+          <div class="tl-item meal">
+            <div class="tl-time">07:30</div>
+            <div class="tl-dot"></div>
+            <div class="tl-content"><div class="tl-title">荣禄春早点<span class="tl-tag meal">早餐</span></div><div class="tl-desc">虾仁小笼、蒸馄饨、片儿川（备选同心楼）</div></div>
+          </div>
+          <div class="tl-item scenic">
+            <div class="tl-time">08:30</div>
+            <div class="tl-dot"></div>
+            <div class="tl-content"><div class="tl-title">鲁迅故里<span class="tl-tag scenic">景点</span></div><div class="tl-desc">祖居 → 故居 → 百草园 → 三味书屋 → 纪念馆</div></div>
+          </div>
+          <div class="tl-item meal">
+            <div class="tl-time">11:30</div>
+            <div class="tl-dot"></div>
+            <div class="tl-content"><div class="tl-title">咸亨饭店<span class="tl-tag meal">午餐</span></div><div class="tl-desc">孔乙己同款，温黄酒+茴香豆+臭豆腐</div></div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-time">13:00</div>
+            <div class="tl-dot"></div>
+            <div class="tl-content"><div class="tl-title">回饭店午休<span class="tl-tag rest">避暑</span></div><div class="tl-desc">1.5 小时充电，下午继续</div></div>
+          </div>
+          <div class="tl-item scenic">
+            <div class="tl-time">15:00</div>
+            <div class="tl-dot"></div>
+            <div class="tl-content"><div class="tl-title">沈园<span class="tl-tag scenic">景点</span></div><div class="tl-desc">陆游唐琬《钗头凤》碑刻，宋代园林</div></div>
+          </div>
+          <div class="tl-item scenic">
+            <div class="tl-time">16:30</div>
+            <div class="tl-dot"></div>
+            <div class="tl-content"><div class="tl-title">东湖（视体力）<span class="tl-tag scenic">景点</span></div><div class="tl-desc">乌篷船进崖壁水洞，17:00 后船老大收工</div></div>
+          </div>
+          <div class="tl-item highlight">
+            <div class="tl-time">18:30</div>
+            <div class="tl-dot"></div>
+            <div class="tl-content"><div class="tl-title">自驾返杭</div><div class="tl-desc">天黑前到杭州，父母不累</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SCENIC ===== -->
+<section class="section section-alt" id="scenic">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow">SCENIC SPOTS · 人文景点</div>
+      <h2>五处文化地标</h2>
+      <p class="section-desc">每一处都配有地陪级人文讲解要点——给航天家庭讲兰亭讲沈园，多讲工艺、年代、数据，少煽情。</p>
+    </div>
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21l3-3 3 3 3-3 3 3 3-3 3 3"/><path d="M3 15l3-3 3 3 3-3 3 3 3-3 3 3"/><path d="M5 12V5l7-3 7 3v7"/></svg></div>
+        <h3>兰亭</h3>
+        <div class="card-sub">中国书法的耶路撒冷</div>
+        <div class="card-body">东晋永和九年（公元 353 年）三月初三，王羲之与谢安等 41 位名士在此修禊，曲水流觞得诗 37 首，王羲之乘醉写下《兰亭集序》28 行 324 字，被尊为"天下第一行书"。</div>
+        <div class="card-tags"><span class="tag grad">鹅池</span><span class="tag grad">曲水流觞</span><span class="tag">御碑亭</span></div>
+      </div>
+      <div class="card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+        <h3>鲁迅故里</h3>
+        <div class="card-sub">从课本走进现场</div>
+        <div class="card-body">一条街串起：鲁迅祖居（周家新台门）→ 鲁迅故居（含百草园）→ 三味书屋（鲁迅 12–17 岁读书处，书桌刻"早"字）→ 鲁迅纪念馆。免费但需分时预约。</div>
+        <div class="card-tags"><span class="tag grad">百草园</span><span class="tag grad">三味书屋</span><span class="tag">台门</span></div>
+      </div>
+      <div class="card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2 7h7l-5.5 4 2 7L12 16l-5.5 4 2-7L3 9h7z"/></svg></div>
+        <h3>沈园</h3>
+        <div class="card-sub">中国文学最痛的重逢</div>
+        <div class="card-body">南宋爱国诗人陆游与原配唐琬被迫休妻，十余年后沈园重逢，陆游题壁《钗头凤·红酥手》，唐琬和词《世情薄》不久病逝。陆游 75 岁重游再写"伤心桥下春波绿，曾是惊鸿照影来"。</div>
+        <div class="card-tags"><span class="tag grad">钗头凤碑</span><span class="tag">孤鹤轩</span><span class="tag">宋井亭</span></div>
+      </div>
+      <div class="card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><path d="M12 5v14"/><path d="M5 12h14"/></svg></div>
+        <h3>东湖</h3>
+        <div class="card-sub">水上的立体山水画</div>
+        <div class="card-body">古代采石场留下的深潭，崖壁陡立如劈。核心体验是坐乌篷船进崖壁水洞——绍兴乌篷船是国家级非遗，船老大手脚并用划桨，船篷用黑漆竹编，就是鲁迅小说里的"乌篷船"。</div>
+        <div class="card-tags"><span class="tag grad">乌篷船</span><span class="tag">崖壁</span><span class="tag warning">视体力</span></div>
+      </div>
+      <div class="card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg></div>
+        <h3>绍兴饭店</h3>
+        <div class="card-sub">江南士绅的"家"</div>
+        <div class="card-body">始建于 1958 年，前身为"绍兴地区交际处"，背靠卧龙山，毗邻城市广场，江南民居庭院式布局。本身就像一座园林，庭院里有古树、亭台、水池，比外面凉快。</div>
+        <div class="card-tags"><span class="tag">国宾馆</span><span class="tag">卧龙山</span><span class="tag">庭院</span></div>
+      </div>
+      <div class="card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3v18l3-2 3 2 3-2 3 2 3-2V3z"/><path d="M9 7h6"/><path d="M9 11h6"/></svg></div>
+        <h3>仓桥直街</h3>
+        <div class="card-sub">古河道石板路台门</div>
+        <div class="card-body">绍兴保存最完整的古河道+石板路+台门老街，夜里灯笼亮起、河边有人乘凉，比白天更有味道。黄酒奶茶、黄酒棒冰、臭豆腐都能在这里找到。</div>
+        <div class="card-tags"><span class="tag grad">夜步</span><span class="tag">黄酒奶茶</span><span class="tag">老街</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DINING ===== -->
+<section class="section" id="dining">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow">DINING · 特色餐饮</div>
+      <h2>四餐绍兴味</h2>
+      <p class="section-desc">从国宾馆中餐厅到咸亨酒店孔乙己同款，每一餐都对应一个文化场景。</p>
+    </div>
+    <div class="rtable-wrap">
+      <table class="rtable">
+        <thead>
+          <tr><th style="width:18%">餐厅</th><th style="width:12%">时段</th><th style="width:42%">必点招牌</th><th style="width:14%">人均</th><th style="width:14%">定位</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="r-name">绍兴饭店中餐厅</td>
+            <td>Day1 午餐</td>
+            <td class="r-dishes"><strong>绍三鲜</strong>（肉圆鱼圆河虾蛋饺）、<strong>干菜焖肉</strong>（霉干菜扣肉）、<strong>醉鸡/花雕醉虾</strong>、清蒸白鱼、油炸臭豆腐</td>
+            <td class="r-price">¥120–180</td>
+            <td>国宾馆·省心</td>
+          </tr>
+          <tr>
+            <td class="r-name">寻宝记绍兴菜</td>
+            <td>Day1 晚餐</td>
+            <td class="r-dishes"><strong>绍三鲜</strong>、<strong>干菜焖肉</strong>、<strong>醉蟹</strong>（若季）、酱鸭、梅干菜扣肉饼、<strong>黄酒冰淇淋</strong>，部分门店越剧伴餐</td>
+            <td class="r-price">¥80–120</td>
+            <td>老字号·有戏</td>
+          </tr>
+          <tr>
+            <td class="r-name">荣禄春</td>
+            <td>Day2 早餐</td>
+            <td class="r-dishes"><strong>虾仁小笼</strong>、<strong>蟹仁小笼</strong>、甜咸大馒头、蒸馄饨、片儿川。绍兴式半发面皮，汤汁偏甜咸。备选：同心楼</td>
+            <td class="r-price">¥30–50</td>
+            <td>老字号点心</td>
+          </tr>
+          <tr>
+            <td class="r-name">咸亨酒店</td>
+            <td>Day2 午餐</td>
+            <td class="r-dishes"><strong>温黄酒</strong>（加饭酒，孔乙己同款）、<strong>茴香豆</strong>、油炸臭豆腐、酱鸭酱肉、干菜焖肉。创建于清光绪甲午年（1894）</td>
+            <td class="r-price">¥69–100</td>
+            <td>鲁迅小说实景</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DATA (dark) ===== -->
+<section class="section section-dark">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow">CULTURAL DENSITY · 文化密度</div>
+      <h2>给航天家庭的数据视角</h2>
+      <p class="section-desc">航天老专家更看重文化密度而非打卡数量——用年代、字数、年份说话。</p>
+    </div>
+    <div class="data-strip">
+      <div class="data-cell">
+        <div class="num grad">353</div>
+        <div class="lbl">兰亭雅集 · 公元年</div>
+      </div>
+      <div class="data-cell">
+        <div class="num grad">324</div>
+        <div class="lbl">兰亭序字数 · 28 行</div>
+      </div>
+      <div class="data-cell">
+        <div class="num grad">85</div>
+        <div class="lbl">陆游享年 · 一生记沈园</div>
+      </div>
+      <div class="data-cell">
+        <div class="num grad">1894</div>
+        <div class="lbl">咸亨酒店创建 · 清光绪甲午</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TIPS ===== -->
+<section class="section section-dark" id="tips" style="padding-top:0">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow">GUIDE TIPS · 地陪实操</div>
+      <h2>六条地陪实操贴士</h2>
+      <p class="section-desc">结合 35°C 高温与航天家庭特点，按元任务"理性·聚焦·旋动"原则提炼。</p>
+    </div>
+    <div class="tips-grid">
+      <div class="tip">
+        <div class="tip-head">
+          <div class="tip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/></svg></div>
+          <h4>防晒补水节奏</h4>
+        </div>
+        <p>给父母各备宽檐帽、电解质水（宝矿力或淡盐水），随身<strong>人丹/藿香正气水</strong>。上午场 8:30–11:00、下午场 15:30–18:00，正午必在室内/车上/午休，绝不硬扛。</p>
+      </div>
+      <div class="tip">
+        <div class="tip-head">
+          <div class="tip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+          <h4>预约前置</h4>
+        </div>
+        <p>今晚就把<strong>鲁迅故里</strong>和<strong>沈园</strong>的预约票搞定（公众号"鲁迅故里沈园景区"）。鲁迅故居免费但分时预约，周日 8:30 入园最舒服。兰亭可现场买。</p>
+      </div>
+      <div class="tip">
+        <div class="tip-head">
+          <div class="tip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <h4>荣禄春确认</h4>
+        </div>
+        <p>今晚你必须<strong>亲眼确认荣禄春是否营业</strong>。这家老字号近年时有停业/重开。若未营业，启动备选——同心楼（解放北路）或绍兴饭店内早餐厅。</p>
+      </div>
+      <div class="tip">
+        <div class="tip-head">
+          <div class="tip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18"/><path d="M3 6h18"/><path d="M3 18h18"/></svg></div>
+          <h4>乌篷船注意</h4>
+        </div>
+        <p>东湖乌篷船<strong>船舱低矮、需低头坐</strong>，提醒父母穿防滑鞋，下船时船会晃。17:00 后船老大陆续收工，去晚了坐不到船——果断放弃东湖直接送别。</p>
+      </div>
+      <div class="tip">
+        <div class="tip-head">
+          <div class="tip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v6"/><path d="M16 2v6"/><rect x="4" y="6" width="16" height="16" rx="2"/><path d="M12 12v6"/></svg></div>
+          <h4>黄酒礼节</h4>
+        </div>
+        <p>父母若不胜酒，温黄酒<strong>浅尝即可</strong>，绍兴黄酒后劲足，别让老人空腹喝。咸亨默认上加饭酒，温热后微甜不冲。女儿可点黄酒奶茶/棒冰，轻量入口。</p>
+      </div>
+      <div class="tip">
+        <div class="tip-head">
+          <div class="tip-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+          <h4>航天家庭敬礼</h4>
+        </div>
+        <p>父母是酒泉卫星发射中心的高工，<strong>讲兰亭讲沈园时别煽情</strong>，多讲工艺、年代、数据——"永和九年是公元 353 年""陆游活了 85 岁""兰亭序 324 字"。他们吃这套。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo-line">
+          <img src="logo-dark.svg" alt="MetaTask">
+          <span class="name">元任务 MetaTask</span>
+        </div>
+        <p>本页面按「元任务全场景视觉规范 v1.1」设计——60% 中性白 / 30% 深蓝 / 10% 蓝紫渐变，深蓝 KV + 暗色数据区，蓝紫渐变仅点亮核心数据与 CTA。</p>
+      </div>
+      <div class="footer-col">
+        <h5>行程导航</h5>
+        <a href="#weather">周末天气</a>
+        <a href="#timeline">两日行程</a>
+        <a href="#scenic">人文景点</a>
+        <a href="#dining">特色餐饮</a>
+        <a href="#tips">地陪贴士</a>
+      </div>
+      <div class="footer-col">
+        <h5>景点详情</h5>
+        <a href="https://sx.bendibao.com/tour/2023414/19566.shtm" target="_blank">兰亭景区攻略</a>
+        <a href="https://sxlxmuseum.com/jqzx/jqgg.htm" target="_blank">鲁迅故里沈园官网</a>
+        <a href="https://you.ctrip.com/sight/shaoxing18/146125441.html" target="_blank">沈园之夜</a>
+        <a href="https://m.tuniu.com/restaurant/3502487/" target="_blank">咸亨酒店</a>
+      </div>
+      <div class="footer-col">
+        <h5>天气来源</h5>
+        <a href="https://www.qweather.com/weather/shaoxing-101210507.html" target="_blank">和风天气绍兴</a>
+        <a href="https://m.nmc.cn/publish/forecast/AZJ/shaoxing.html" target="_blank">中央气象台绍兴</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 元任务 MetaTask · 绍兴两日深度地陪方案 · 基于 VI 规范 v1.1 延展</p>
+      <p>Logo 本体以原 VI 为准，不可重绘改色</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+// fade-in on scroll
+const obs = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('fade'); obs.unobserve(e.target);} });
+},{threshold:.12});
+document.querySelectorAll('.card,.tip,.day-col,.data-cell,.tl-item').forEach(el=>obs.observe(el));
+
+// nav active on scroll
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-menu a');
+window.addEventListener('scroll',()=>{
+  let cur='';
+  sections.forEach(s=>{ if(window.scrollY>=s.offsetTop-120) cur=s.id; });
+  navLinks.forEach(l=> l.classList.toggle('active', l.getAttribute('href')==='#'+cur));
+});
+</script>
+</body>
+</html>
